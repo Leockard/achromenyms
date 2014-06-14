@@ -1,0 +1,11 @@
+{
+    "manifest_version": 2,
+    "name": "Hello world",
+    "description": "test extension please ignore",
+    "version": "1.0",
+    "permissions": ["activeTab", "tabs", "http://*/*", "https://*/*"],
+    "background": {
+    	"scripts": ["background.js"],
+    	"persistent": true
+    }
+}
