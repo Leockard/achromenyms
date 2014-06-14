@@ -7,5 +7,8 @@ As such, it has very limited - but useful- functionality.
 
 Example
 -------
+In the example below, the pointer is over the word (DOM).
 
+
+-------
 If you find it useful, enjoy!
