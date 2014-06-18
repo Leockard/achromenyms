@@ -82,12 +82,10 @@ for (i in acronyms) {
 	// strs is an array of strings of the form
 	// ["some text", "<a href=...>linky </a>", "some more text", "<a href=...>another linky </a>", "and even more text"].
 	// e.g. every even numbered item is a <a> tag that we should not touch. Change only odd numbered items.
-	if(strs.length > 2) {
-	    // Note that odd numbered items have even indices...
-	    for (var k = 0; k < strs.length; k += 2) {
-		strs[k] = replaceAll(strs[k], initials, "<span title=\"" + words + "\">" + initials + "</span>");
-	    };
-	    paragraphs[j].innerHTML = strs.join("");
+	// Note that odd numbered items have even indices...
+	for (var k = 0; k < strs.length; k += 2) {
+	    strs[k] = replaceAll(strs[k], initials, "<span title=\"" + words + "\">" + initials + "</span>");
 	};
+	paragraphs[j].innerHTML = strs.join("");
     };
 }
