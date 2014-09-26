@@ -1,9 +1,9 @@
 {
     "manifest_version": 2,
-    "name": "Hello world",
-    "description": "test extension please ignore",
+    "name": "achromenyms",
+    "description": "Displays a tooltip over initials whose meaning is found in the text of a webpage.",
     "version": "1.0",
-    "permissions": ["activeTab", "tabs", "http://*/*", "https://*/*"],
+    "permissions": ["tabs", "http://*/*", "https://*/*"],
     "background": {
     	"scripts": ["background.js"],
     	"persistent": true
