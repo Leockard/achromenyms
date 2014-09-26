@@ -60,7 +60,7 @@ function getAllAcronyms() {
 	    var myRe = prepareRe(initials)
 	    var acr = myRe.exec(text);
 	    // Remember the first group contains the words
-	    if (acr != null && isAcronym(acr[1], initials)) {
+	    if (acr !== null && isAcronym(acr[1], initials)) {
 		acronyms.push([acr[1], initials]);
 	    };
 	};
