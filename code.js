@@ -7,9 +7,9 @@ function replaceAll(str, sub, replacement) {
 // http://dreaminginjavascript.wordpress.com/2008/08/22/eliminating-duplicates/
 // Thanks!
 function deleteDuplicates(arr) {
-    var i,
-    var len = arr.length,
-    var out = [],
+    var i;
+    var len = arr.length;
+    var out = [];
     var obj = {};
     for (i = 0; i < len; i++) {
 	obj[arr[i]] = 0;
