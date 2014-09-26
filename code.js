@@ -8,11 +8,11 @@ function replaceAll(str, sub, replacement) {
 // Thanks!
 function deleteDuplicates(arr) {
     var i,
-    len=arr.length,
-    out=[],
-    obj={};
-    for (i=0;i<len;i++) {
-	obj[arr[i]]=0;
+    len = arr.length,
+    out = [],
+    obj = {};
+    for (i = 0; i < len; i++) {
+	obj[arr[i]] = 0;
     }
     for (i in obj) {
 	out.push(i);
@@ -43,7 +43,7 @@ function isAcronym(words, initials) {
     for (var w in splitwords) {
 	wordinitials.push(splitwords[w].charAt(0));
     };
-    return wordinitials.join("").toLowerCase() == initials.toLowerCase();
+    return wordinitials.join("").toLowerCase() === initials.toLowerCase();
 }
 
 // Returns an array of elements of the form [words, initials].
@@ -53,7 +53,7 @@ function getAllAcronyms() {
     var text = document.getElementsByTagName("html")[0].textContent;
     var matches = text.match(/\([A-Z]+\)/g);
     var acronyms = [];
-    if(matches != null) {
+    if(matches !== null) {
 	matches = deleteDuplicates(matches);
 	for(var i in matches) {
 	    var initials = matches[i].slice(1, -1); // forget the parentheses
