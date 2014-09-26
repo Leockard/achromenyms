@@ -12,6 +12,9 @@ Example
 In the example below, the pointer is over the word (DOM).
 ![DOM tooltip in wikipedia](https://raw.githubusercontent.com/Leockard/achromenyms/master/example.png)
 
+The pointer is over the word NYU..
+![DOM tooltip in wikipedia](https://raw.githubusercontent.com/Leockard/achromenyms/master/example2.png)
+
 Installation
 ------------
 To install, simply drag and drop the .crx file into the chrome://extensions/ page. Developer mode must be active.
